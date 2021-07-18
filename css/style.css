@@ -1,0 +1,149 @@
+/* Start of basic */
+@font-face {
+  font-family: "JF Flat Regular";
+  src: url('../fonts/JF-Flat-regular.eot');
+  src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+  url('../fonts/JF-Flat-regular.woff') format('woff'),
+  url('../fonts/JF-Flat-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+
+body {
+  font-family: "JF Flat Regular", 'Tajawal', sans-serif;
+  background-image: url('../imgs/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  direction: rtl;
+}
+
+a,a:hover {color: inherit;}
+
+/* Page transition */
+.transition-fade { opacity: 1; transition: 500ms; }
+html.is-animating .transition-fade { opacity: 0; }
+
+/* Buttons */
+.crystalVotesButton {
+  border: 1px solid #fff !important;
+  outline: none !important;
+  background-color: #39ACBE;
+  color: white !important;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  display: block;
+  width: 20rem;
+  text-align: center;
+}
+.crystalVotesButton.outline {
+  background-color: rgba(0, 0, 0, 0.0);
+}
+.crystalVotesButton.disabled {background-color: #797979}
+.crystalVotesButton:active {font-weight: bolder}
+.crystalVotesButton:hover{text-decoration: underline;}
+.crystalVotesButton.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545
+}
+
+.crystalVotesBorder {
+  border: 1px solid #39ACBE;
+  padding: 8px 16px;
+}
+
+/* The pic in the pages */
+.mainPic {
+  width: 100%;
+  left: 0;
+  top: 10%
+}
+@media (max-width: 516px) {
+ .mainPic {display: none;}
+}
+
+/* Forms */
+form {border: 1px solid #39ACBE; color: white; padding: 16px 32px;}
+input {background: none; border:none; border-bottom: 1px solid #39ACBE; width: 100%; padding: 8px 16px; color: inherit;}
+::placeholder {color: #fff;}
+
+/* Start Main */
+.main {
+  overflow: hidden;
+  position: relative;
+}
+.main p {margin-top: 16px}
+
+
+/* Start Login & register & authentication */
+.login, .register, .authentication, vote {
+  overflow: hidden;
+  position: relative;
+}
+.login .mainPic, .register .mainPic, .authentication .mainPic, .vote .mainPic {width: 50%}
+
+/* Terms */
+.term {
+  margin: 32px 0;
+}
+.term .mainPic {
+  top: auto;
+  bottom: 16px;
+  left: 16px;
+  opacity: 0.7;
+  width: 25%;
+}
+
+/* List Of condidates */
+.candidates .container {padding: 32px 0;}
+.candidates .list{
+    padding: 70px 30px 30px;
+    margin: 50px 45px;
+    border: 1px solid #fff;
+    position: relative;
+}
+.candidates .list .pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #39ACBE;
+    overflow: hidden;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    left: 0;
+}
+
+.candidates .list .title{
+  display: inline-table;
+  padding: 8px 24px 8px 50px;
+  background: #fff;
+  border: 1px solid #39ACBE;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #39ACBE;
+  position: absolute;
+  top: -22px;
+  right: 40px;
+}
+.candidates .list .post{
+  font-size: 0.8rem;
+  color: #000;
+}
+.candidates .list .description{
+    font-size: 15px;
+    line-height: 27px;
+    margin: 0;
+    position: relative;
+}
+
+.candidates .program {
+  list-style: url('../imgs/list.png');
+}
+.candidates .program li {
+  padding-right: 16px;
+  margin: 30px 0
+}

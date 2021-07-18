@@ -1,0 +1,11 @@
+/* Copyright For - TimeToDev [T2D] © 2018 */
+@font-face {
+	  font-family: "nes";
+	  font-style: normal;
+	  font-weight: bold;
+	  src: url("../fonts/NeoSansArabic.woff") format("woff");
+}
+
+div h1, div h2, div h3, div h4, div h6, div p, div align, div i, div li, div.h1, div.h2, div.h3 ,div.h3 , div.h4 ,div.h6, div.p ,div.align ,div.a ,div.li ,div.i ,div.li ,div ,label ,button ,input {
+   font-family: 'Open Sans', nes;
+}
